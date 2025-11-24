@@ -12,9 +12,9 @@ class MyReport(Report):
         # report_data - список словарей
         return tabulate(report_data, headers="keys")
 ```
-Добавьте его в словарь REPORTS: 
+Добавьте его в словарь REPORTS:  
 `REPORTS = {..., "my": "MyReport"}`
-Сгенерируйте отчет: 
+Сгенерируйте отчет:  
 `python main.py --files file1.csv file2.csv --report my`
 
 ## Запуск тестов
